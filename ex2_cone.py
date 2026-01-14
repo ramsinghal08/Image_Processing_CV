@@ -91,7 +91,7 @@ for cnt in valid_contours:
     x, y, w, h = cv2.boundingRect(cnt)
     cv2.rectangle(enhanced_rgb, (x, y), (x + w, y + h), (255, 0, 0), 2)
 
-# Display final output with contours and rectangles
+# Displays final output with contours and rectangles
 fig, axes = plt.subplots(1, 2, figsize=(12, 5))
 axes[0].imshow(line_img)
 axes[0].set_title('Detected Lines (Hough)')
