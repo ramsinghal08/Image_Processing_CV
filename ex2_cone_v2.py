@@ -12,11 +12,6 @@ image_files = sorted(glob.glob(os.path.join(folder_path, '*.jpg')) +
 #change img_id here for diff. image to process from the folder path above
 img_id = 0
 
-CANNY_TH1 = 100
-CANNY_TH2 = 200
-HOUGH_LEN = 50
-HOUGH_GAP = 20
-
 def group_and_hull_contours(contours, distance_threshold=50):
     """
     Groups contours that are close to each other and wraps them in a single Convex Hull.
